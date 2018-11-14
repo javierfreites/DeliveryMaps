@@ -21,6 +21,24 @@
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
 
+  <div class = "field">
+    <%= f.label :name , "Nombre"%> 
+    <%= f.text_field :name, autofocus: true %> 
+    </div>
+    <div class = "field">
+    <%= f.label :name , "Apellidos"%> 
+    <%= f.text_field :name, autofocus: true %>
+    </div>
+    
+   <div class = "field">
+    <%= f.label :diretion , "Direccion" %>
+    <%= f.text_field :diretion %>
+  </div>
+
+   <div><%= f.label :date_of_birth %><br />
+        <%= f.date_select :date_of_birth %>
+  </div>
+
   <div class="actions">
     <%= f.submit "Resgistrarse" %>
   </div>
